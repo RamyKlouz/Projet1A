@@ -14,7 +14,7 @@
 
 // implementaion 1 (initialisation de l'enigme)
 
-/*
+/**
 * @brief pour initialiser l'enigme
 * @param le fichier contenant l'enigme
 * @param la chaine qui recevra l'enigme
@@ -22,7 +22,6 @@
 * @param la couleur a utiliser
 * @return rien
 */
-
 void initialiser (FILE *fichier,char *chaine, TTF_Font * font,SDL_Color color) {
 char c;
 fichier=fopen("enigme.txt","r");
@@ -39,7 +38,7 @@ if (fichier!=NULL) {
 
 // implementation 2 (generation de la reponse)
 
-/*
+/**
 * @brief pour generer la reponse (vrai/faux)
 * @param l'ecran
 * @param le text a generer si vrai
@@ -48,7 +47,6 @@ if (fichier!=NULL) {
 * @param la position
 * @return rien
 */
-
 void generation (SDL_Surface *screen,SDL_Surface *textbon,SDL_Surface *textfaux,SDL_Event event,SDL_Rect position){
 int cont=1;
 while (cont) {
@@ -74,7 +72,8 @@ switch (event.type) {
 }
 
 // implementation 3 (choix d'enigme aleatoire a partir d'un fichier) 
-/*
+
+/**
 * @brief pour generer une question aleatoire a partir d'un fichier
 * @param le fichier en question
 * @param le font
@@ -83,7 +82,6 @@ switch (event.type) {
 * @param la position
 * @return rien
 */
-
 void choisir(FILE *fichier,TTF_Font * font,SDL_Color color,char *chaine,SDL_Rect position){
 int newline=0,line;
 SDL_Surface * textrand;

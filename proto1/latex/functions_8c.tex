@@ -8,8 +8,7 @@
 {\ttfamily \#include $<$string.\+h$>$}\\*
 {\ttfamily \#include $<$time.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}functions.\+h\char`\"{}}\\*
-Include dependency graph for functions.\+c\+:
-\nopagebreak
+Include dependency graph for functions.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -19,12 +18,102 @@ Include dependency graph for functions.\+c\+:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries initialiser} (F\+I\+LE $\ast$fichier, char $\ast$chaine, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Color color)\hypertarget{functions_8c_a5beb045907d5623923e9124da89ffc74}{}\label{functions_8c_a5beb045907d5623923e9124da89ffc74}
+void \hyperlink{functions_8c_a5beb045907d5623923e9124da89ffc74}{initialiser} (F\+I\+LE $\ast$fichier, char $\ast$chaine, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em pour initialiser l\textquotesingle{}enigme \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_a4b26255e912d7ac838b6c7839919bdfc}{generation} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Surface $\ast$textbon, S\+D\+L\+\_\+\+Surface $\ast$textfaux, S\+D\+L\+\_\+\+Event event, S\+D\+L\+\_\+\+Rect position)
+\begin{DoxyCompactList}\small\item\em pour generer la reponse (vrai/faux) \end{DoxyCompactList}\item 
+void \hyperlink{functions_8c_a5f8a4043a3c02c18edb3355502c790f5}{choisir} (F\+I\+LE $\ast$fichier, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Color color, char $\ast$chaine, S\+D\+L\+\_\+\+Rect position)
+\begin{DoxyCompactList}\small\item\em pour generer une question aleatoire a partir d\textquotesingle{}un fichier \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-void {\bfseries generation} (S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Surface $\ast$textbon, S\+D\+L\+\_\+\+Surface $\ast$textfaux, S\+D\+L\+\_\+\+Event event, S\+D\+L\+\_\+\+Rect position)\hypertarget{functions_8c_a4b26255e912d7ac838b6c7839919bdfc}{}\label{functions_8c_a4b26255e912d7ac838b6c7839919bdfc}
 
-\item 
-void {\bfseries choisir} (F\+I\+LE $\ast$fichier, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Color color, char $\ast$chaine, S\+D\+L\+\_\+\+Rect position)\hypertarget{functions_8c_a5f8a4043a3c02c18edb3355502c790f5}{}\label{functions_8c_a5f8a4043a3c02c18edb3355502c790f5}
+\subsection{Function Documentation}
+\index{functions.\+c@{functions.\+c}!choisir@{choisir}}
+\index{choisir@{choisir}!functions.\+c@{functions.\+c}}
+\subsubsection[{\texorpdfstring{choisir(\+F\+I\+L\+E $\ast$fichier, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Color color, char $\ast$chaine, S\+D\+L\+\_\+\+Rect position)}{choisir(FILE *fichier, TTF_Font *font, SDL_Color color, char *chaine, SDL_Rect position)}}]{\setlength{\rightskip}{0pt plus 5cm}void choisir (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{fichier, }
+\item[{T\+T\+F\+\_\+\+Font $\ast$}]{font, }
+\item[{S\+D\+L\+\_\+\+Color}]{color, }
+\item[{char $\ast$}]{chaine, }
+\item[{S\+D\+L\+\_\+\+Rect}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8c_a5f8a4043a3c02c18edb3355502c790f5}{}\label{functions_8c_a5f8a4043a3c02c18edb3355502c790f5}
 
-\end{DoxyCompactItemize}
+
+pour generer une question aleatoire a partir d\textquotesingle{}un fichier 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & fichier en question \\
+\hline
+{\em le} & font \\
+\hline
+{\em la} & couleur \\
+\hline
+{\em la} & chaine qui contiendra l\textquotesingle{}enigme \\
+\hline
+{\em la} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\index{functions.\+c@{functions.\+c}!generation@{generation}}
+\index{generation@{generation}!functions.\+c@{functions.\+c}}
+\subsubsection[{\texorpdfstring{generation(\+S\+D\+L\+\_\+\+Surface $\ast$screen, S\+D\+L\+\_\+\+Surface $\ast$textbon, S\+D\+L\+\_\+\+Surface $\ast$textfaux, S\+D\+L\+\_\+\+Event event, S\+D\+L\+\_\+\+Rect position)}{generation(SDL_Surface *screen, SDL_Surface *textbon, SDL_Surface *textfaux, SDL_Event event, SDL_Rect position)}}]{\setlength{\rightskip}{0pt plus 5cm}void generation (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{textbon, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{textfaux, }
+\item[{S\+D\+L\+\_\+\+Event}]{event, }
+\item[{S\+D\+L\+\_\+\+Rect}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8c_a4b26255e912d7ac838b6c7839919bdfc}{}\label{functions_8c_a4b26255e912d7ac838b6c7839919bdfc}
+
+
+pour generer la reponse (vrai/faux) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l\textquotesingle{}ecran} & \\
+\hline
+{\em le} & text a generer si vrai \\
+\hline
+{\em le} & text a generer si faux \\
+\hline
+{\em l\textquotesingle{}evenement} & \\
+\hline
+{\em la} & position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}
+\index{functions.\+c@{functions.\+c}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!functions.\+c@{functions.\+c}}
+\subsubsection[{\texorpdfstring{initialiser(\+F\+I\+L\+E $\ast$fichier, char $\ast$chaine, T\+T\+F\+\_\+\+Font $\ast$font, S\+D\+L\+\_\+\+Color color)}{initialiser(FILE *fichier, char *chaine, TTF_Font *font, SDL_Color color)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{fichier, }
+\item[{char $\ast$}]{chaine, }
+\item[{T\+T\+F\+\_\+\+Font $\ast$}]{font, }
+\item[{S\+D\+L\+\_\+\+Color}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{functions_8c_a5beb045907d5623923e9124da89ffc74}{}\label{functions_8c_a5beb045907d5623923e9124da89ffc74}
+
+
+pour initialiser l\textquotesingle{}enigme 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & fichier contenant l\textquotesingle{}enigme \\
+\hline
+{\em la} & chaine qui recevra l\textquotesingle{}enigme \\
+\hline
+{\em le} & font a utiliser \\
+\hline
+{\em la} & couleur a utiliser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rien 
+\end{DoxyReturn}

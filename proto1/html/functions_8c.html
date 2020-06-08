@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -104,16 +105,181 @@ Include dependency graph for functions.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5beb045907d5623923e9124da89ffc74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5beb045907d5623923e9124da89ffc74"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initialiser</b> (FILE *fichier, char *chaine, TTF_Font *font, SDL_Color color)</td></tr>
+<tr class="memitem:a5beb045907d5623923e9124da89ffc74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a5beb045907d5623923e9124da89ffc74">initialiser</a> (FILE *fichier, char *chaine, TTF_Font *font, SDL_Color color)</td></tr>
+<tr class="memdesc:a5beb045907d5623923e9124da89ffc74"><td class="mdescLeft">&#160;</td><td class="mdescRight">pour initialiser l'enigme  <a href="#a5beb045907d5623923e9124da89ffc74">More...</a><br /></td></tr>
 <tr class="separator:a5beb045907d5623923e9124da89ffc74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b26255e912d7ac838b6c7839919bdfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b26255e912d7ac838b6c7839919bdfc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generation</b> (SDL_Surface *screen, SDL_Surface *textbon, SDL_Surface *textfaux, SDL_Event event, SDL_Rect position)</td></tr>
+<tr class="memitem:a4b26255e912d7ac838b6c7839919bdfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a4b26255e912d7ac838b6c7839919bdfc">generation</a> (SDL_Surface *screen, SDL_Surface *textbon, SDL_Surface *textfaux, SDL_Event event, SDL_Rect position)</td></tr>
+<tr class="memdesc:a4b26255e912d7ac838b6c7839919bdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">pour generer la reponse (vrai/faux)  <a href="#a4b26255e912d7ac838b6c7839919bdfc">More...</a><br /></td></tr>
 <tr class="separator:a4b26255e912d7ac838b6c7839919bdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f8a4043a3c02c18edb3355502c790f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f8a4043a3c02c18edb3355502c790f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>choisir</b> (FILE *fichier, TTF_Font *font, SDL_Color color, char *chaine, SDL_Rect position)</td></tr>
+<tr class="memitem:a5f8a4043a3c02c18edb3355502c790f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a5f8a4043a3c02c18edb3355502c790f5">choisir</a> (FILE *fichier, TTF_Font *font, SDL_Color color, char *chaine, SDL_Rect position)</td></tr>
+<tr class="memdesc:a5f8a4043a3c02c18edb3355502c790f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pour generer une question aleatoire a partir d'un fichier  <a href="#a5f8a4043a3c02c18edb3355502c790f5">More...</a><br /></td></tr>
 <tr class="separator:a5f8a4043a3c02c18edb3355502c790f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a5f8a4043a3c02c18edb3355502c790f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void choisir </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fichier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>chaine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pour generer une question aleatoire a partir d'un fichier </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>fichier en question </td></tr>
+    <tr><td class="paramname">le</td><td>font </td></tr>
+    <tr><td class="paramname">la</td><td>couleur </td></tr>
+    <tr><td class="paramname">la</td><td>chaine qui contiendra l'enigme </td></tr>
+    <tr><td class="paramname">la</td><td>position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rien </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b26255e912d7ac838b6c7839919bdfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generation </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>screen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>textbon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>textfaux</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Event&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pour generer la reponse (vrai/faux) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l'ecran</td><td></td></tr>
+    <tr><td class="paramname">le</td><td>text a generer si vrai </td></tr>
+    <tr><td class="paramname">le</td><td>text a generer si faux </td></tr>
+    <tr><td class="paramname">l'evenement</td><td></td></tr>
+    <tr><td class="paramname">la</td><td>position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rien </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5beb045907d5623923e9124da89ffc74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiser </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>fichier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>chaine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pour initialiser l'enigme </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>fichier contenant l'enigme </td></tr>
+    <tr><td class="paramname">la</td><td>chaine qui recevra l'enigme </td></tr>
+    <tr><td class="paramname">le</td><td>font a utiliser </td></tr>
+    <tr><td class="paramname">la</td><td>couleur a utiliser </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rien </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
