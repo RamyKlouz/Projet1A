@@ -1,6 +1,12 @@
 #ifndef _SDL_rotozoom_h
 #define _SDL_rotozoom_h
 
+/**
+* @Brief Bibliotheque SDL necessaire pour la rotation et le zoom
+*
+*/
+
+
 /* Set up for C function definitions, even when using C++ */
 #ifdef __cplusplus
 extern "C"

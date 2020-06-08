@@ -4,6 +4,16 @@
 #include "SDL/SDL_mixer.h"
 #include "SDL2/SDL_rotozoom.h"
 
+/**
+* @file main.c
+* @brief prog test
+* @author Ramy Klouz
+*
+* Programme pour tester la fonction rotozoomSurface()
+*
+*/
+
+
 int main(void){
 
 FILE* fichier=NULL;
