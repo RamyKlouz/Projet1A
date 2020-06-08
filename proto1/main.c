@@ -69,16 +69,8 @@ if (screen==NULL){
 
 SDL_FreeSurface(image);
 // implementaion 1 (initialisation de l'enigme)
-initialiser (fichier,chaine,font,color);
-/*fichier=fopen("enigme.txt","r");
+initialiser (fichier,chaine);
 
-if (fichier!=NULL) {
-	do{
-	c=fgetc(fichier);
-	strncat(chaine,&c,1);
-	}while (c!=EOF);
-	fclose(fichier);
-}*/
 textenigme = TTF_RenderText_Solid(font, chaine, color);
 textbon = TTF_RenderText_Solid(font, "bonne reponse!", color);
 textfaux = TTF_RenderText_Solid(font, "mauvaise reponse!", color);
@@ -88,30 +80,12 @@ SDL_Flip(screen);
 // implementation 3 (choix d'enigme aleatoire a partir d'un fichier)
 FILE *fd;
 char chaine2[512]="";
-choisir(fd,font,color2,chaine2,position3);
+choisir(fd,chaine2);
 SDL_Surface * textrand;
-/*int newline=0,line;
-SDL_Surface * textrand;
-    char str[512];
-    FILE *fd = fopen("enigmes.txt", "r");
-    
-    srand(time(0));
-	line=(rand() % (3-1+1))+1;
-       while ( fgets( str, 100, fd ) != NULL ) 
-            { 
-              newline++;
-              if(newline==line)
-              {
-                textrand=TTF_RenderText_Solid(font, str, color2);
-		printf("%d",line);
-              }
-            } 
 
-    
-	*/
-		textrand=TTF_RenderText_Solid(font, chaine2, color2);		
-		SDL_BlitSurface(textrand, NULL, screen, &position3);
-          	SDL_Flip(screen);
+	textrand=TTF_RenderText_Solid(font, chaine2, color2);		
+	SDL_BlitSurface(textrand, NULL, screen, &position3);
+        SDL_Flip(screen);
  	
 	//fclose(fd);
 // implementation 2 (generation de la reponse)

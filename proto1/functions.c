@@ -18,11 +18,9 @@
 * @brief pour initialiser l'enigme
 * @param le fichier contenant l'enigme
 * @param la chaine qui recevra l'enigme
-* @param le font a utiliser
-* @param la couleur a utiliser
 * @return rien
 */
-void initialiser (FILE *fichier,char *chaine, TTF_Font * font,SDL_Color color) {
+void initialiser (FILE *fichier,char *chaine) {
 char c;
 fichier=fopen("enigme.txt","r");
 if (fichier!=NULL) {
@@ -76,15 +74,11 @@ switch (event.type) {
 /**
 * @brief pour generer une question aleatoire a partir d'un fichier
 * @param le fichier en question
-* @param le font
-* @param la couleur
 * @param la chaine qui contiendra l'enigme
-* @param la position
 * @return rien
 */
-void choisir(FILE *fichier,TTF_Font * font,SDL_Color color,char *chaine,SDL_Rect position){
+void choisir(FILE *fichier,char *chaine){
 int newline=0,line;
-SDL_Surface * textrand;
     char str[512];
     fichier = fopen("enigmes.txt", "r");
     
