@@ -19,6 +19,7 @@
 * @param le fichier contenant l'enigme
 * @param la chaine qui recevra l'enigme
 * @return rien
+*
 */
 void initialiser (FILE *fichier,char *chaine) {
 char c;
